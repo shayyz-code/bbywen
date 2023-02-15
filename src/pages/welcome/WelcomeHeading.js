@@ -1,6 +1,6 @@
-import { useContext } from 'react';
-import { GlobalStateContext } from '../GlobalState';
-import * as styles from './Welcome.styles';
+import { useContext } from "react";
+import { GlobalStateContext } from "../GlobalState";
+import * as styles from "./Welcome.styles";
 
 export default function WelcomeHeading({ imgs }) {
   const { censored } = useContext(GlobalStateContext);
@@ -9,8 +9,8 @@ export default function WelcomeHeading({ imgs }) {
       <div style={styles.headingImgGrid}>
         <div style={styles.headingContentGrid}>
           <div style={styles.headingContent}>
-            <h1 style={styles.name}>{!censored ? 'RACIST' : 'REIKO'}</h1>
-            <p style={styles.text}>{!censored ? 'kiddo' : 'awwwn'}</p>
+            <h1 style={styles.name}>{!censored ? "WEN" : "NWAY HTWE AUNG"}</h1>
+            <p style={styles.text}>{!censored ? "kalyylyy" : "s pw"}</p>
           </div>
         </div>
         {imgs.map((imgItem, index) => (

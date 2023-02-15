@@ -1,12 +1,12 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import GlobalState from './pages/GlobalState';
-import Layout from './pages/Layout';
-import WelcomePage from './pages/welcome/pageWelcome';
-import PropertiesPage from './pages/properties/pageProperties';
-import GalleryPage from './pages/gallery/pageGallery';
-import NotesPage from './pages/notes/pageNotes';
-import MyDaysPage from './pages/mydays/pageMyDays.js';
+import GlobalState from "./pages/GlobalState";
+import Layout from "./pages/Layout";
+import WelcomePage from "./pages/welcome/pageWelcome";
+import PropertiesPage from "./pages/properties/pageProperties";
+import GalleryPage from "./pages/gallery/pageGallery";
+import NotesPage from "./pages/notes/pageNotes";
+import MyDaysPage from "./pages/mydays/pageMyDays.js";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
             <Route path="/notes">
               <NotesPage />
             </Route>
-            <Route path="/days">
+            <Route path="/clips">
               <MyDaysPage />
             </Route>
           </Switch>

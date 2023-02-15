@@ -1,54 +1,53 @@
-import { styles } from '../ThemeColors.styles';
+import { styles } from "../ThemeColors.styles";
 
 export const centerMaker = {
-  position: 'absolute',
+  position: "absolute",
   top: 0,
   left: 0,
-  width: '100%',
-  height: '100%',
+  width: "100%",
+  height: "100%",
 };
 
 export const container = {
-  display: 'flex',
-  flexDirection: 'column',
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  justifyContent: 'center',
-  alignItems: 'center',
-  background:
-    'linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255,255,255,0.4))',
-  borderTop: '1px solid #fff',
-  borderLeft: '1px solid #fff',
-  borderRadius: 15,
+  display: "flex",
+  flexDirection: "column",
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  justifyContent: "center",
+  alignItems: "center",
+  background: "rgba(255, 255, 255, 0.7)",
+  borderTop: "2px solid rgb(220, 220, 220)",
+  borderLeft: "2px solid rgb(220, 220, 220)",
+  boxShadow: "10px 10px rgba(100, 100, 100, 0.7)",
   padding: 10,
 };
 
 export const headingContainer = {
-  display: 'block',
+  display: "block",
   width: styles.cardWidth - 20,
   borderRadius: 15,
 };
 
 export const linkContainer = {
-  display: 'block',
+  display: "block",
   width: styles.cardWidth - 20,
   borderRadius: 15,
   marginTop: 10,
 };
 
 export const headingImgGrid = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(8, 1fr)',
-  gridTemplateRows: 'repeat(8, 8px)',
+  display: "grid",
+  gridTemplateColumns: "repeat(8, 1fr)",
+  gridTemplateRows: "repeat(8, 8px)",
   gridGap: 2,
 };
 
 export const linkGrid = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(8, 1fr)',
-  gridTemplateRows: 'repeat(4, 8px)',
+  display: "grid",
+  gridTemplateColumns: "repeat(8, 1fr)",
+  gridTemplateRows: "repeat(4, 8px)",
   gridGap: 2,
 };
 
@@ -75,46 +74,43 @@ export const linkContentGrid = [
 ];
 
 export const headingContent = {
-  display: 'block',
-  width: '100%',
-  height: '100%',
-  background:
-    'linear-gradient(135deg, rgba(255,255,255, 0.3), rgba(255,255,255,0.6))',
+  display: "block",
+  width: "100%",
+  height: "100%",
   borderRadius: 5,
 };
 
 export const linkContent = {
-  display: 'block',
-  width: '100%',
-  height: '100%',
-  background:
-    'linear-gradient(135deg, rgba(255,255,255, 0.3), rgba(255,255,255,0.6))',
+  display: "block",
+  width: "100%",
+  height: "100%",
+  background: "rgba(225, 225, 225, 0.7)",
   borderRadius: 5,
-  cursor: 'pointer',
+  cursor: "pointer",
 };
 
 export const name = {
-  display: 'block',
+  display: "block",
   fontSize: 12,
   background: styles.unHoveredColor,
-  WebkitBackgroundClip: 'text',
-  WebkitTextFillColor: 'transparent',
+  WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
   margin: 0,
   paddingTop: 10,
   paddingLeft: 10,
 };
 
 export const linkName = {
-  display: 'block',
+  display: "block",
   fontSize: 11,
-  fontWeight: 'normal',
+  fontWeight: "normal",
   margin: 0,
   paddingTop: 5,
   paddingLeft: 10,
 };
 
 export const text = {
-  display: 'block',
+  display: "block",
   fontSize: 9,
   margin: 0,
   paddingLeft: 10,
@@ -157,25 +153,24 @@ export const linkIconsGrid = [
 ];
 
 export const img = {
-  display: 'block',
-  width: '100%',
-  height: '100%',
+  display: "block",
+  width: "100%",
+  height: "100%",
   borderRadius: 5,
-  objectFit: 'cover',
+  objectFit: "cover",
 };
 
 export const iconContainer = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  width: '100%',
-  height: '100%',
-  background:
-    'linear-gradient(135deg, rgba(255,255,255, 0.3), rgba(255,255,255,0.6))',
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "100%",
+  height: "100%",
+  background: "rgba(225, 225, 225, 0.7)",
   borderRadius: 5,
-  cursor: 'pointer',
+  cursor: "pointer",
 };
 
 export const icon = {
-  display: 'block',
+  display: "block",
 };

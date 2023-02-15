@@ -1,12 +1,12 @@
-import { useContext } from 'react';
-import ReactPlayer from 'react-player';
-import Button from '../Button';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { useContext } from "react";
+import ReactPlayer from "react-player";
+import Button from "../Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
-import * as styles from './ViewMyDays.styles';
+import * as styles from "./ViewMyDays.styles";
 
-import { ViewMyDaysContext } from './pageMyDays';
+import { ViewMyDaysContext } from "./pageMyDays";
 
 export default function ViewMyDaysCard() {
   const { view, setView, defaultViewState } = useContext(ViewMyDaysContext);
@@ -15,9 +15,9 @@ export default function ViewMyDaysCard() {
     <div style={styles.container}>
       <div style={styles.viewCard}>
         <div style={styles.innerContainer}>
-          {fileType === '.jpg' ? (
+          {fileType === ".jpg" || fileType === ".png" ? (
             <img style={styles.img} alt={date} src={filePath} />
-          ) : fileType === '.mp4' ? (
+          ) : fileType === ".mp4" || fileType === ".mov" ? (
             <ReactPlayer
               url={filePath}
               width={styles.img.width}

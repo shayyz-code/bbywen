@@ -1,26 +1,21 @@
 body {
-  background: linear-gradient(
-    35deg,
-    rgba(255, 208, 243, 1) 0%,
-    rgba(254, 189, 255, 1) 30%,
-    rgba(230, 180, 250, 1) 100%
-  );
+  background: #fff;
   overflow-x: hidden;
   margin: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
 }
 
 h2 {
-  font-family: 'Robota Mono', monospace;
+  font-family: "Robota Mono", monospace;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

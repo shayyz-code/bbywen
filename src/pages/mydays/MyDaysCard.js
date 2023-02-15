@@ -1,20 +1,20 @@
-import { useContext, useState } from 'react';
+import { useContext, useState } from "react";
 
-import Censor from '../Censor';
-import { GlobalStateContext } from '../GlobalState';
-import { ViewMyDaysContext } from './pageMyDays';
+import Censor from "../Censor";
+import { GlobalStateContext } from "../GlobalState";
+import { ViewMyDaysContext } from "./pageMyDays";
 
-import * as styles from './MyDays.styles';
-import { styles as themeStyles } from '../ThemeColors.styles';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+import * as styles from "./MyDays.styles";
+import { styles as themeStyles } from "../ThemeColors.styles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 
 export default function MyDaysCard({
   date,
   content,
   filePath,
   fileType,
-  thumbnail = '',
+  thumbnail = "",
 }) {
   const [imgHeight, setImgHeight] = useState();
   const { censored } = useContext(GlobalStateContext);
@@ -29,14 +29,14 @@ export default function MyDaysCard({
       {censored && (
         <Censor width={themeStyles.cardWidth / 2} height={imgHeight} />
       )}
-      {fileType === '.jpg' ? (
+      {fileType === ".jpg" || fileType === ".png" ? (
         <img
           style={styles.img}
           alt={date}
           src={filePath}
           onLoad={({ target: img }) => setImgHeight(img.offsetHeight)}
         />
-      ) : fileType === '.mp4' ? (
+      ) : fileType === ".mp4" || fileType === ".mov" ? (
         <div style={styles.imgContainer}>
           <img
             style={styles.img}

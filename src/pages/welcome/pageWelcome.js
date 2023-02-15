@@ -1,17 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 
-import * as styles from './Welcome.styles';
-import WelcomeHeading from './WelcomeHeading';
-import WelcomeLink from './WelcomeLink';
+import * as styles from "./Welcome.styles";
+import WelcomeHeading from "./WelcomeHeading";
+import WelcomeLink from "./WelcomeLink";
 
-import { GlobalStateContext } from '../GlobalState';
+import { GlobalStateContext } from "../GlobalState";
 
 import {
   faListAlt,
   faImages,
   faCaretSquareRight,
   faBookmark,
-} from '@fortawesome/free-regular-svg-icons';
+} from "@fortawesome/free-regular-svg-icons";
 
 const WelcomePage = () => {
   const { data } = useContext(GlobalStateContext);
@@ -38,7 +38,7 @@ const WelcomePage = () => {
                   gridIndex={1}
                 />
                 <WelcomeLink
-                  linkName="Days"
+                  linkName="Clips"
                   linkPath="/days"
                   linkDescription={linkDescription.mydays}
                   icon={faCaretSquareRight}
